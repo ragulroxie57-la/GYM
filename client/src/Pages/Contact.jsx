@@ -1,10 +1,12 @@
 import React from 'react'
-import Contacts from '../components/contacts'
+import Info from '../components/Info.jsx'
+
 
 function Contact() {
   return (
     <div>
-      <Contacts/>
+      <Info />
+      
     </div>
   )
 }

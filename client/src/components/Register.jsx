@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'; // 1. useEffect சேர்த்துள்ளேன்
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function Register() {
-  const navigate = useNavigate(); 
-  const [stage, setStage] = useState('register'); 
+  const navigate = useNavigate();
+  const [stage, setStage] = useState('register');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ function Register() {
     const footer = document.querySelector("footer");
     
     if (footer) {
-      footer.style.display = "none"; 
+      footer.style.display = "none";
     }
 
     return () => {
@@ -38,10 +38,10 @@ function Register() {
     e.preventDefault();
     setMessage('');
 
-    const url = `https://gym-0552.onrender.com/api/${stage}`; 
+    const url = `https://gym-0552.onrender.com/api/${stage}`;
 
-    const payload = stage === 'register' 
-      ? { name, email, password } 
+    const payload = stage === 'register'
+      ? { name, email, password }
       : { email, password };
 
     try {
@@ -84,9 +84,9 @@ function Register() {
         <header style={{ textAlign: 'center', marginBottom: '20px' }}>
           <p style={{ color: colors.primary, fontWeight: 'bold', letterSpacing: '1px' }}>START YOUR TRANSFORMATION.</p>
           {message && (
-            <div style={{ 
-              padding: '10px', 
-              borderRadius: '5px', 
+            <div style={{
+              padding: '10px',
+              borderRadius: '5px',
               backgroundColor: message.includes('Successful') ? 'rgba(76, 175, 80, 0.1)' : 'rgba(255, 46, 46, 0.1)',
               color: message.includes('Successful') ? '#4caf50' : '#ff2e2e',
               fontSize: '14px',
@@ -105,43 +105,43 @@ function Register() {
           {stage === 'register' && (
             <div>
               <label style={labelStyle}>Full Name</label>
-              <input 
-                type="text" 
-                placeholder="Enter your name" 
-                style={inputStyle} 
+              <input
+                type="text"
+                placeholder="Enter your name"
+                style={inputStyle}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                required 
+                required
               />
             </div>
           )}
 
           <div>
             <label style={labelStyle}>Email Address</label>
-            <input 
-              type="email" 
-              placeholder="Your email" 
-              style={inputStyle} 
+            <input
+              type="email"
+              placeholder="Your email"
+              style={inputStyle}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required 
+              required
             />
           </div>
 
           <div>
             <label style={labelStyle}>Password</label>
-            <input 
-              type="password" 
-              placeholder="Your password" 
-              style={inputStyle} 
+            <input
+              type="password"
+              placeholder="Your password"
+              style={inputStyle}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required 
+              required
             />
           </div>
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             style={btnStyle}
             onMouseOver={(e) => e.target.style.backgroundColor = colors.secondary}
             onMouseOut={(e) => e.target.style.backgroundColor = colors.primary}
