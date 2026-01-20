@@ -69,7 +69,7 @@ function About() {
         <div style={aboutTextStyle}>
           <h2 style={{ color: '#fff', fontSize: isMobile ? '24px' : '30px', fontWeight: 'bold' }}>
             Welcome to <br/>
-            <span style={h2Style}> ALMI_S Fitness Center</span>
+            <span style={h2Style}> ALMI'S Fitness Center</span>
           </h2>
           <p style={pStyle}>
             We offer personalized fitness programs to help you achieve your health and wellness goals. 
