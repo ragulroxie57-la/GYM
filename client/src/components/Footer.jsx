@@ -185,7 +185,7 @@ function Footer() {
           >
             <div style={iconStyle}>📞</div>
             <h4 style={h4Style}>Contact Us</h4>
-            <p style={{ ...pDetailStyle, fontSize: '18px', color: '#fff', fontWeight: 'bold' }}>+91 95662 08724</p>
+            <p style={{ ...pDetailStyle, fontSize: '18px', color: '#fff', fontWeight: 'bold' }}>+91 93425 77328</p>
             <p style={{ fontSize: '12px', opacity: 0.5, fontWeight: 'bold', textTransform: 'uppercase' }}>
               ALWARPET | ADYAR | PERUNGUDI | ANNA NAGAR
             </p>
@@ -206,7 +206,7 @@ function Footer() {
         color: '#555',
         borderTop: '1px solid #1a1a1a'
       }}>
-        COPYRIGHT © 2026 – QUAD FITNESS PRIVATE LIMITED
+        COPYRIGHT © 2026 – FITNESS PRIVATE LIMITED
       </div>
     </footer>
   );
