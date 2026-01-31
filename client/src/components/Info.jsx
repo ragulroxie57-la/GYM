@@ -72,8 +72,8 @@ function Contact() {
       <div style={containerStyle}>
         <div style={cardBaseStyle} onMouseOver={(e) => handleCardHover(e, true)} onMouseOut={(e) => handleCardHover(e, false)}>
           <h2 style={headingStyle}>Contact Info</h2>
-          <div style={contactItemStyle}><span style={{fontSize: '20px'}}>📍</span><div><b style={{color: '#ff2e2e'}}>Address</b><br />Almis Fitness Center, Madley Rd,<br /> T. Nagar, Chennai - 17</div></div>
-          <div style={contactItemStyle}><span style={{fontSize: '20px'}}>📞</span><div><b style={{color: '#ff2e2e'}}>Phone</b><br />+91 98765 43210</div></div>
+          <div style={contactItemStyle}><span style={{fontSize: '20px'}}>📍</span><div><b style={{color: '#ff2e2e'}}>Address</b><br />Almi's Fitness Center, Madley Rd,<br /> T. Nagar, Chennai - 17</div></div>
+          <div style={contactItemStyle}><span style={{fontSize: '20px'}}>📞</span><div><b style={{color: '#ff2e2e'}}>Phone</b><br />+91 93425 77328</div></div>
           <div style={contactItemStyle}><span style={{fontSize: '20px'}}>📧</span><div><b style={{color: '#ff2e2e'}}>Email</b><br />almis_fitness@gmail.com</div></div>
         </div>
 
